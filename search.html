@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./icons/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <title>Magnificent's blog</title>
+</head> 
+<body> 
+
+<header class="mobile-header d-md-none">
+    <div class="mobile-wrapper">
+        <nav class="top-mb-nav">
+            <a href="#" class="left-bar">
+                <img src="./icons/menu.svg" alt="mobile menu icon" width="18px" height="18px">
+            </a>
+            <a href="#" class="mb-logo">
+                <img src="./images/logo.png" alt="webghalam logo" width="210px" height="50px">
+            </a>
+            <a href="#" class="right-search">
+                <img src="./icons/search.svg" alt="mobile search icon" width="18px" height="18px">
+            </a>
+        </nav>
+        <div class="mb-login">
+            <a href="#" class="mb-sign-in">ورود</a>
+            <a href="#" class="mb-sign-up">ثبت نام</a>
+        </div>
+    </div>
+</header>
+<div class="lg-top-header d-none d-md-block">
+    <div class="wrapper">
+        <div class="flex-parent">
+            <a class="logo" href="#"> <img src="./images/logo.png" alt="desktop logo" /></a>
+
+            <div class="login">
+                <a href="#" class="sign-in">ورود</a>
+                <a href="#" class="sign-up">ثبت نام</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="category d-none d-md-block" dir="rtl">
+    <nav class="nav-category">
+            <ul class="first-nav">
+                <li><a href="#">دسته  بندی ها</a>
+                    <div class="second-nav container-fluid p-0 text-right">
+                        <div class="nav-wrapper">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <ul class="nav-1">
+                                        <li class="title">frontend</li>
+                                        <li><a href="#">Html</a></li>
+                                        <li><a href="#">Css</a></li>
+                                        <li><a href="#">Javascript</a></li>
+                                        <li><a href="#">Bootstrap</a></li>
+                                        <li><a href="#">Sass</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul class="nav-1">
+                                        <li class="title">backend</li>
+                                        <li><a href="#">Node js</a></li>
+                                        <li><a href="#">PHP</a></li>
+                                        <li><a href="#">Go</a></li>
+                                        <li><a href="#">Python</a></li>
+                                        <li><a href="#">Mongodb</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3 mt-md-3 mt-lg-0">
+                                    <ul class="nav-1">
+                                        <li class="title">Snippet</li>
+                                        <li><a href="#">Template</a></li>
+                                        <li><a href="#">Color Plate</a></li>
+                                        <li><a href="#">Free Code</a></li>
+                                        <li><a href="#">UI kit</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3 mt-md-3 mt-lg-0">
+                                    <ul class="nav-1">
+                                        <li class="title">Snippet</li>
+                                        <li><a href="#">Template</a></li>
+                                        <li><a href="#">Color Plate</a></li>
+                                        <li><a href="#">Free Code</a></li>
+                                        <li><a href="#">UI kit</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#">همکاری</a></li>
+                <li><a href="#">تبلیغات</a></li>
+            </ul>
+        </nav>
+</div>
+
+
+<div class="top-search-bar wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-3 p-0 pr-lg-4 d-none d-md-block"></div>
+            <div class="col-12 col-lg-9 p-0 mt-5 mb-4">
+                <div class="search-top">
+                    <form action="#" class="top-form" autocomplete="off" id="top-form-id">
+                        <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                        <!-- <button type="submit" id="top-search">جستوجو</button> -->
+                        <img class="search-icon" id="search-icon" src="./icons/search.svg" alt="#">
+                        <input id="top-search-input" type="text" placeholder="جستوجو در وبسایت" value="" dir="rtl" />
+                    </form>
+                    <div class="search-result" id="searchResult">
+                        <ul id="searchResultList">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-result-header text-right mt-5">
+                    <h4 class="d-flex pr-2" dir="rtl">
+                        <span class="text">همه مقالات</span>
+                        <span class="result-number">(۱۱۲ نتیجه)</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- main -->
+<section class="main-articles" role="main">
+    <div class="container-fluid wrapper">
+        <div class="row">
+                <div class="col-12 col-lg-3 p-0 pr-lg-4 d-none d-md-block">
+                    <ul class="all-category">
+                        <li class="title first"><a class="active" href="#">ALL</a></li>
+                        <li class="title"><a href="#">Frontend</a></li>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">Css</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">react</a></li>
+                        <li class="title"><a href="#">backend</a></li>
+                        <li><a href="#">node js</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Mongodb</a></li>
+                        <li><a href="#">mysql</a></li>
+                        <li class="title"><a href="#">ux / ui</a></li>
+                        <li><a href="#">ux strategy</a></li>
+                        <li><a href="#">ux tips</a></li>
+                        <li><a href="#">ui design</a></li>
+                        <li><a href="#">user experience</a></li>
+                        <li class="title"><a href="#">machine learning</a></li>
+                        <li><a href="#">python ai</a></li>
+                        <li><a href="#">machine learning</a></li>
+                        <li><a href="#">computer vision</a></li>
+                        <li><a href="#">deep learning</a></li>
+                    </ul>
+                </div>
+
+<div class="col-12 col-lg-9 p-0 shadow">
+    <div class="search-result-bar">
+        <div class="wrapper">
+            <div class="select-style" dir="rtl">
+                <select class="select-form">
+                    <option value="popularity">بیشترین بازدید</option>
+                    <option value="relevancy">مربوطه</option>
+                    <option value="publishedAt">اخرین </option>
+                </select>
+            </div>
+            <div class="next_prev">
+                <div class="page-detail">
+                    <p class="whole-page">۳۴ از</p>
+                    <form action="#" class="page-number js-Pjax">
+                        <input class="page-number-input" type="number" value="1">
+                    </form>
+                    <p class="text">صفحه</p>
+                </div>
+                <a href="#" class="next-btn js-Pjax-link">بعدی</a>
+                <a href="#" class="prev-btn js-Pjax-link">قبلی</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="newest-articles">
+        <div class="newest-articles-wrapper p-md-3">
+            <div class="container-fluid">
+                <div class="row" id="articles_list">
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 p-md-2 skeleton"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- <script src="./js/pjax.min.js"></script> -->
+<script>
+    // var pjax;
+    // let pageNumber = 0;
+    // let sort = 'popularity';
+    // let userInput = "google";
+
+
+    // var initButtons = function() {
+    //     var next_btn = document.querySelector('.next-btn');
+    //     var prev_btn = document.querySelector('.prev-btn');
+
+    //     next_btn.addEventListener('click', function(e) {
+    //         e.preventDefault();
+    //         pageNumber += 1;
+
+    //         pjax.loadUrl('https:newsapi.org/v2/everything?' +
+    //         `q=${userInput}&` +
+    //         `sortBy=${sort}&` + 
+    //         'pageSize=12&' + 
+    //         `page=${pageNumber}&` +
+    //         'apiKey=b3be36840aec4d83a1529ebe495cff40');
+    //     });
+    // };
+    
+    // document.addEventListener('DOMContentLoaded', function() {
+    //         pjax = new Pjax({
+    //         elements: [".js-Pjax-link"],
+    //         selectors: [".newest-articles", "title"]
+    //     }); 
+    //     console.log("Pjax initialized.");
+    //     initButtons();
+    // })
+   
+
+
+   
+
+</script>
+
+<script>
+   
+    let p = document.getElementsByClassName('card-header-trim');
+    let p2 = document.getElementsByClassName('description');
+    for(let i=0; i < p.length; i++) {
+        var text = p[i].innerText.toString();
+        if (text.length > 50) {
+            p[i].innerText = text.substr(0,50) + '...';
+        }
+    }
+    for(let i=0; i < p2.length; i++) {
+        var text = p2[i].innerText.toString();
+        if (text.length > 120) {
+            p2[i].innerText = text.substr(0,120) + '...';
+        }
+    }
+
+</script>
+<script src="./js/main.js"></script>
+</body>
+</html>
